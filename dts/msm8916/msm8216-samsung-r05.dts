@@ -19,4 +19,15 @@
 			i2c-address = <0x25>;
 		};
 	};
+	
+	a53g {
+		// Samsung Galaxy 3G SM-A500H
+		model = "Samsung Galaxy A5 (SM-A500H)";
+		compatible = "samsung,a53g", "qcom,msm8916", "lk2nd,device";
+		lk2nd,match-bootloader = "A500H*";
+		lk2nd,smd-rpm-hack-opening;
+
+		qcom,msm-id = <206 0>;
+		qcom,board-id = <0xCE08FF01 8>;
+	};
 };
